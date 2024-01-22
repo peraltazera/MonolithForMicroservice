@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class CategoriaService {
@@ -19,5 +20,9 @@ public class CategoriaService {
 
     public List<Categoria> findAll() {
         return repository.findAll();
+    }
+
+    public Optional<Categoria> findById(String id) {
+        return repository.findById(id);
     }
 }

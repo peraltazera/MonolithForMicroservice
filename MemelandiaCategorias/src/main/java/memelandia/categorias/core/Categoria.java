@@ -15,16 +15,6 @@ public class Categoria {
     private Date dataCadastro;
     private String idUsuario;
 
-    public String getUsuario() {
-        return idUsuario;
-    }
-
-    public void setUsuario(String idUsuario) {
-        this.idUsuario = idUsuario;
-    }
-
-    public Categoria() {}
-
     public Long getId() {
         return id;
     }
@@ -55,6 +45,14 @@ public class Categoria {
 
     public void setDataCadastro(Date dataCadastro) {
         this.dataCadastro = dataCadastro;
+    }
+
+    public String getIdUsuario() {
+        return idUsuario;
+    }
+
+    public void setIdUsuario(String idUsuario) {
+        this.idUsuario = idUsuario;
     }
 
     @Override

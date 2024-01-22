@@ -18,22 +18,6 @@ public class Meme {
 
     public Meme() {}
 
-    public String getUsuario() {
-        return idUsuario;
-    }
-
-    public void setUsuario(String idUsuario) {
-        this.idUsuario = idUsuario;
-    }
-
-    public String getCategoriaMeme() {
-        return idCategoria;
-    }
-
-    public void setCategoriaMeme(String idCategoria) {
-        this.idCategoria = idCategoria;
-    }
-
     public String getId() {
         return id;
     }
@@ -64,6 +48,22 @@ public class Meme {
 
     public void setDataCadastro(Date dataCadastro) {
         this.dataCadastro = dataCadastro;
+    }
+
+    public String getIdCategoria() {
+        return idCategoria;
+    }
+
+    public void setIdCategoria(String idCategoria) {
+        this.idCategoria = idCategoria;
+    }
+
+    public String getIdUsuario() {
+        return idUsuario;
+    }
+
+    public void setIdUsuario(String idUsuario) {
+        this.idUsuario = idUsuario;
     }
 
     @Override
