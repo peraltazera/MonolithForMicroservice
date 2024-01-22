@@ -1,0 +1,20 @@
+server:
+  port: 8081
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: usuario
+          uri: http://localhost:8084/
+          predicates:
+            - Path=/usuario,/usuario/{segment}
+        - id: meme
+          uri: http://localhost:8082/
+          predicates:
+            - Path=/meme
+        - id: categoria
+          uri: http://localhost:8083/
+          predicates:
+            - Path=/categoria,/categoria/{segment}
+
