@@ -13,7 +13,7 @@ import java.util.Optional;
 @Configuration
 @EnableFeignClients
 @EnableDiscoveryClient
-public class Usuario {
+public class Client {
 
     @Autowired
     private HWUsuario hwUsuario;
@@ -25,7 +25,7 @@ public class Usuario {
         Optional<Object> findById(@PathVariable String id);
     }
 
-    public Boolean FindById(String id){
+    public Boolean FindByIdUsuario(String id){
         return !hwUsuario.findById(id).isEmpty();
     }
 }

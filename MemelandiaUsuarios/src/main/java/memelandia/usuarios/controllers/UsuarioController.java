@@ -17,8 +17,6 @@ public class UsuarioController {
 
     @PostMapping
     public Usuario insertUsuario(@RequestBody Usuario usuario) {
-        System.out.println(usuario);
-        System.out.println("insertUsuario");
         return service.insertUsuario(usuario);
     }
 

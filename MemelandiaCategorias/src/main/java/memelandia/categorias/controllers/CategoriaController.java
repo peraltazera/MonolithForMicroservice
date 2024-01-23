@@ -1,6 +1,6 @@
 package memelandia.categorias.controllers;
 
-import memelandia.categorias.client.Usuario;
+import memelandia.categorias.client.Client;
 import memelandia.categorias.core.Categoria;
 import memelandia.categorias.services.CategoriaService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,12 +15,9 @@ public class CategoriaController {
 
     @Autowired
     private CategoriaService service;
-    @Autowired
-    private Usuario usuario;
 
     @PostMapping
-    public Categoria novaCategoriaMeme(Categoria categoria) {
-        System.out.println(usuario.FindById(categoria.getIdUsuario()));
+    public Categoria novaCategoriaMeme(@RequestBody Categoria categoria) {
         return service.novaCategoria(categoria);
     }
 
