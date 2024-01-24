@@ -1,0 +1,8 @@
+--- COMANDO DOCKER PARA INSTALAR O RABBITMQ ---
+
+docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3.11-management
+
+--- LOGIN DEFAULT DO RABBITMQ ---
+
+Username: guest
+Password: guest
