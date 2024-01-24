@@ -1,21 +1,22 @@
-package memelandia.usuarios.core;
+package memelandia.meme.core;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import java.io.Serializable;
 import java.util.Date;
 
-@Document(collection = "usuarios")
-public class Usuario {
+@Document(collection = "memes")
+public class Meme {
 
     @Id
     private String id;
     private String nome;
-    private String email;
+    private String descricao;
     private Date dataCadastro;
+    private String idCategoria;
+    private String idUsuario;
 
-    public Usuario() {}
+    public Meme() {}
 
     public String getId() {
         return id;
@@ -33,12 +34,12 @@ public class Usuario {
         this.nome = nome;
     }
 
-    public String getEmail() {
-        return email;
+    public String getDescricao() {
+        return descricao;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
     }
 
     public Date getDataCadastro() {
@@ -49,13 +50,31 @@ public class Usuario {
         this.dataCadastro = dataCadastro;
     }
 
+    public String getIdCategoria() {
+        return idCategoria;
+    }
+
+    public void setIdCategoria(String idCategoria) {
+        this.idCategoria = idCategoria;
+    }
+
+    public String getIdUsuario() {
+        return idUsuario;
+    }
+
+    public void setIdUsuario(String idUsuario) {
+        this.idUsuario = idUsuario;
+    }
+
     @Override
     public String toString() {
-        return "Usuario{" +
+        return "Meme{" +
                 "id='" + id + '\'' +
                 ", nome='" + nome + '\'' +
-                ", email='" + email + '\'' +
+                ", descricao='" + descricao + '\'' +
                 ", dataCadastro=" + dataCadastro +
+                ", idCategoria='" + idCategoria + '\'' +
+                ", idUsuario='" + idUsuario + '\'' +
                 '}';
     }
 }
