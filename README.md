@@ -1,5 +1,5 @@
 # MonolithForMicroservice
-<br>
+
 * Proposta para a migração de um programa monolítico para uma arquitetura inovadora baseada em microserviços.
 * Utilizei tecnologias, como Spring Boot e Docker, para criar microserviços independentes, resultando em uma arquitetura mais flexível e escalável.
 * Enfrentei desafios complexos, incluindo a gestão de comunicação entre serviços, a implementação de transações distribuídas e a configuração eficiente em um ambiente distribuído.
