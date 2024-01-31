@@ -9,7 +9,7 @@
   </ul>
 </div>
 <div>
-  Link para o projeto monolítico: https://github.com/github-ebac/backend-java-pro
+  <a href="[https://www.example.com](https://github.com/github-ebac/backend-java-pro)" target="_blank">Clique aqui</a> para abrir o projeto monolítico
 </div>
 <br/>
 <div>
